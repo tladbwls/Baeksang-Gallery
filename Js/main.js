@@ -1,0 +1,52 @@
+// open사이드메뉴
+const sideOpen = document.querySelector(".side-nav-wrap .side-nav-btn a");
+const sideClose = document.querySelector(
+  ".side-nav-wrap .side-nav-menu .logo .side-close-btn"
+);
+const overlay = document.querySelector(".side-nav-wrap .overlay");
+const sideMenu = document.querySelector(".side-nav-menu");
+// 사이드메뉴 열기
+sideOpen.addEventListener("click", function () {
+  sideOpen.classList.toggle("open");
+  if (sideOpen.classList.contains("open")) {
+    sideClose.classList.add("open");
+    overlay.classList.add("open");
+    sideMenu.style.left = "0";
+  }
+});
+// 사이드메뉴 닫기
+sideClose.addEventListener("click", function () {
+  sideClose.classList.toggle("open");
+  if (!sideClose.classList.contains("open")) {
+    sideOpen.classList.remove("open");
+    overlay.classList.remove("open");
+    sideMenu.style.left = "-64rem";
+  }
+});
+
+// 사이드메뉴 안 아코디언 메뉴
+const all = document.querySelectorAll(".nav-menu-wrap>ul>li");
+const accHd = document.querySelectorAll(".side-acc");
+
+// accHD를 눌렀을 때 부모요소에 open이 들어가며 열리게
+accHd.forEach(function (Hd, i) {
+  accHd[i].addEventListener("click", toggleItem);
+  sideClose.addEventListener("click", toggleClose);
+});
+//부모 요소에 open이 들어갔을 때 다른 부모요소는 open 빼기
+function toggleItem() {
+  var itemClass = this.parentNode.className;
+  for (i = 0; i < all.length; i++) {
+    all[i].className = "nav-menu-close";
+  }
+  if (itemClass == "nav-menu-close") {
+    this.parentNode.className = "open";
+  }
+}
+//x버튼 눌렀을 때 모두 닫히게
+function toggleClose() {
+  var itemClass = this.parentNode.className;
+  for (i = 0; i < all.length; i++) {
+    all[i].className = "nav-menu-close";
+  }
+}
