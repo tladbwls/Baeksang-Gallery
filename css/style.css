@@ -13,7 +13,7 @@
 .header .nav-right> ul> li:nth-child(6) a {display: inline-block; width: 2rem; height: 2rem; background: url(../img/ico-header-search.png) no-repeat center;}
 /* Side navigation style */
 .side-nav-wrap .overlay {visibility: hidden;}
-.side-nav-wrap .overlay.active {position: fixed; top: 0; left: 0; width: 100%; height: 100%; visibility: visible; background: rgba(0, 0, 0, .5); transition: all 1s ease;}
+.side-nav-wrap .overlay.open {position: fixed; top: 0; left: 0; width: 100%; height: 100%; visibility: visible; background: rgba(0, 0, 0, .5); transition: all 1s ease;}
 .side-nav-wrap .side-nav-btn a {display: block; width: 5.8rem; height: 2.3rem; background: url(/img/ico-header-menu.png) no-repeat center;}
 .side-nav-menu {display: block; position: fixed; top: 0; left: -64rem; width: 64rem; min-width: 58rem; height: 100%; background-color: #fff; transition: all .5s ease;}
 .side-nav-menu .nav-menu-wrap {margin:  5rem 5rem 16.6rem ;}
