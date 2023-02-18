@@ -108,11 +108,14 @@ li::marker{list-style: none;}
 
 
 /* Common css */
-.wrapper {width: var(--ls-full); height: auto; margin: 0 auto; overflow: hidden;}
-.container {width: var(--ls-full); height: auto; max-width: 1400px; margin: auto;padding: 0 5rem; }
-.section {width: var(--ls-full); height: auto; padding: 13rem var(--el-wide);  }
+/* .wrapper {width: var(--ls-full); height: auto; margin: 0 auto; overflow: hidden;}
+.container {width: var(--ls-full); height: auto; max-width: 1600px; margin: auto;padding: 0 5rem; }
+.section {width: var(--ls-full); max-width: 1600px; height: auto; margin: 0 auto;} */
+.wrapper {width: var(--ls-full); height: auto; overflow: hidden;}
+.container {width: var(--ls-full); height: auto; max-width: 1600px; margin: auto; padding: 0 var(--el-wide);}
+.section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
 
 
-.header .logo {width: 25%; height: auto; margin-left: 4rem;}
-.header .logo a {display: inline-block; width: 14.6rem; height: 4.5rem; background: url(../img/logo.png) no-repeat center; font-size: 0;}
+
+
 

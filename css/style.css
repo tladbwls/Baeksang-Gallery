@@ -31,3 +31,8 @@
 .side-nav-menu .nav-menu-wrap>ul>li.open .side-acc-item {position: absolute; top: 2.2rem; right: 0; display: flex; flex-direction: column; gap: 2.2rem; width: 50%; height: auto;}
 .side-nav-menu .nav-menu-wrap .side-acc-item a {display: inline-block; flex-direction: column; font-size: 1.6rem; color: #333333; line-height: 2.4rem;}
 
+/* slider section style */
+.swiper-section .container {width: 100%; height: auto; padding: 0; border: 1px solid #000;}
+.swiper-section .swiper-wrapper .swiper-slide:nth-child(1) {background: url(/img/maindata128056_0.jpg) no-repeat center;}
+.swiper-section .swiper-wrapper .swiper-slide:nth-child(2) {background: url(/img/maindata131255_0.jpg) no-repeat center;}
+.swiper-section .swiper-wrapper .swiper-slide:nth-child(3) {background: url(/img/maindata131279_0.jpg) no-repeat center;}

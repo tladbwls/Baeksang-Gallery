@@ -50,3 +50,5 @@ function toggleClose() {
     all[i].className = "nav-menu-close";
   }
 }
+// swiper slider 
+var swiper = new Swiper(".mySwiper", {});
