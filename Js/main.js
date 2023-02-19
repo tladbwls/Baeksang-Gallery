@@ -50,20 +50,37 @@ function toggleClose() {
     all[i].className = "nav-menu-close";
   }
 }
-// swiper slider 
+// swiper slider
+var menu = ["BAEXANG GALLARY SHOP <br> GRAND OPEN", "GRAND OPEN", "BAEXANG"];
+var menu1 = ["01", "02", "03"];
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        '<div class="' +
+        className +
+        '">' +
+        "<span>" +
+        menu1[index] +
+        "</span>" +
+        "<strong>" +
+        menu[index] +
+        "</strong>" +
+        "</div>"
+      );
+    },
   },
   grabCursor: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: ["-20%", 0, -1],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
 });
