@@ -51,4 +51,19 @@ function toggleClose() {
   }
 }
 // swiper slider 
-var swiper = new Swiper(".mySwiper", {});
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  grabCursor: true,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-20%", 0, -1],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+      },
+});
