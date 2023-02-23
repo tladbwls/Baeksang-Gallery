@@ -62,26 +62,4 @@
 }
 
 .swiper-section .swiper .swiper-button-next {width: 50%; height: 100%; top: 0; left: 50%; opacity: 0;}
-
-
-.circle { 
-
-    position: absolute;
-
-    top: 0; 
-
-    left: 0; 
-
-    width: 150px; 
-
-    height: 150px; 
-
-    border-radius: 50%; 
-
-    background-color: #9bf50b; 
-
-    transform: translate(-50%, -50%);
-
-    z-index: 1000;
-
-}
+.swiper-section .swiper .swiper-button-prev {width: 50%; height: 100%; top: 0; right: 50%; opacity: 0;}

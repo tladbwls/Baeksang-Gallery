@@ -140,39 +140,28 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next">
-            <div class="circle"></div>
-          </div>
+          <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
         <div class="swiper-pagination"></div>
       </section>    
       <!-- //slider section -->
 
+      <!-- best section -->
+      <section class="best-section section">
+        <div class="main-txts">
+          <div class="txt">
+            <span> 백상에서 가장 인기있는 작품을 소개합니다.</span>
+            <h2>BEST ART</h2>
+          </div>
+        </div>
+      </section>
+      <!-- //best section -->
+
     </div>
     <!-- swiper slider -->
     </div>
   
-  <script>
-    const circle = document.querySelector(".circle");
-  
-
-document.addEventListener("mousemove", (e) => { // mousemove이벤트를 이용해 움
-
-    // 마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
-
-    // pageX, pageY와는 다름.
-    console.log(e);
-    const mouseX = e.clientX;
-
-    const mouseY = e.clientY;
-
-    circle.style.left = mouseX + 'px';
-
-    circle.style.top = mouseY + 'px';
-
-});
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- JS -->
   <script src="/Js/main.js"></script>
