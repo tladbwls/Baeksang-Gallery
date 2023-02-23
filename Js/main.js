@@ -53,9 +53,9 @@ function toggleClose() {
 // first swiper slider
 var menu = ["BAEXANG GALLARY SHOP <br> GRAND OPEN", "GRAND OPEN", "BAEXANG"];
 var menu1 = ["01", "02", "03"];
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper-section .mySwiper", {
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-section .swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return (
@@ -89,12 +89,16 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//best swiper slider
-// var swiper = new Swiper(".best-swiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
+// best swiper slider
+var swiper = new Swiper(".best-section .mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
