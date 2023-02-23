@@ -119,18 +119,31 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <span>ART & DESIGN</span>
-              <h2>BAEXANG GALLERY SHOP <br> GRAND OPEN</h2>
+              <div class="swiper-img"></div>
+              <div class="swiper-txts">
+                <span>ART & DESIGN</span>
+                <h2>BAEXANG GALLERY SHOP <br> GRAND OPEN</h2>
+              </div>
             </div>
             <div class="swiper-slide">
-              <span>BAEXANG GALLERY</span>
-              <h2>GRAND OPEN</h2>
+              <div class="swiper-img"></div>
+              <div class="swiper-txts">
+                <span>BAEXANG GALLERY</span>
+                <h2>GRAND OPEN</h2> 
+              </div>
             </div>
             <div class="swiper-slide">
-              <span>Art · Design in</span>
-              <h2>BAEXANG</h2>
+              <div class="swiper-img"></div>
+              <div class="swiper-txts">
+                <span>Art · Design in</span>
+                <h2>BAEXANG</h2>
+              </div>
             </div>
           </div>
+          <div class="swiper-button-next">
+            <div class="circle"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
         </div>
         <div class="swiper-pagination"></div>
       </section>    
@@ -139,7 +152,27 @@
     </div>
     <!-- swiper slider -->
     </div>
-    
+  
+  <script>
+    const circle = document.querySelector(".circle");
+  
+
+document.addEventListener("mousemove", (e) => { // mousemove이벤트를 이용해 움
+
+    // 마우스의 좌표는 clientX와 clientY를 이용해 알수 있다. -> 브라우저 window의 좌표값 위치를 전달한다.
+
+    // pageX, pageY와는 다름.
+    console.log(e);
+    const mouseX = e.clientX;
+
+    const mouseY = e.clientY;
+
+    circle.style.left = mouseX + 'px';
+
+    circle.style.top = mouseY + 'px';
+
+});
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- JS -->
   <script src="/Js/main.js"></script>

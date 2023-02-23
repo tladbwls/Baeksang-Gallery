@@ -83,4 +83,8 @@ var swiper = new Swiper(".mySwiper", {
       translate: ["100%", 0, 0],
     },
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
