@@ -13,9 +13,9 @@
 .header .nav-right> ul> li:nth-child(6) a {display: inline-block; width: 2rem; height: 2rem; background: url(../img/ico-header-search.png) no-repeat center;}
 /* Side navigation style */
 .side-nav-wrap .overlay {visibility: hidden;}
-.side-nav-wrap .overlay.open {position: fixed; top: 0; left: 0; width: 100%; height: 100%; visibility: visible; background: rgba(0, 0, 0, .5); transition: all 1s ease;}
+.side-nav-wrap .overlay.open {position: fixed; top: 0; left: 0; width: 100%; height: 100%; visibility: visible; background: rgba(0, 0, 0, .5); transition: all 1s ease; z-index: 500;}
 .side-nav-wrap .side-nav-btn a {display: block; width: 5.8rem; height: 2.3rem; background: url(/img/ico-header-menu.png) no-repeat center;}
-.side-nav-menu {display: block; position: fixed; top: 0; left: -64rem; width: 64rem; min-width: 58rem; height: 100%; background-color: #fff; transition: all .5s ease;}
+.side-nav-menu {display: block; position: fixed; top: 0; left: -64rem; width: 64rem; min-width: 58rem; height: 100%; background-color: #fff; transition: all .5s ease; z-index: 1000;}
 .side-nav-menu .nav-menu-wrap {margin:  5rem 5rem 16.6rem ;}
 .side-nav-menu .logo {display: flex; justify-content: space-between; width: 100%; height: auto; margin-left: 0;}
 .side-nav-menu .logo a:nth-child(2) {width: 1.8rem; height: 1.8rem; background: url(/img/ico-sitemap-close.png) no-repeat center;} 
@@ -66,15 +66,20 @@
 
 /* best section style */
 
-.best-section {padding: 15rem 27rem;}
+.best-section {position: relative; padding: 15rem 27rem;}
 .best-section .swiper { width: 100%;height: 100%; margin-top: 12rem;}
 .best-section .swiper-slide {width: 25%; height: auto; display: flex; flex-direction: column; justify-content: center;align-items: center;text-align: center;font-size: 18px;background: #fff;}
-.best-section .swiper-slide .best-swiper-img {width: 100%; height: 45rem;}
+.best-section .swiper-slide .best-swiper-img {display: flex; width: 100%; height: 45rem;}
 .best-section .swiper-slide:nth-child(1) .best-swiper-img { background: url(/img/bridge.jpg) no-repeat center; background-size: cover;}
 .best-section .swiper-slide:nth-child(2) .best-swiper-img {background: url(/img/kiss.jpg) no-repeat center;  background-size: cover;}
 .best-section .swiper-slide:nth-child(3) .best-swiper-img {background: url(/img/morning.png) no-repeat center; background-size: cover;}
 .best-section .swiper-slide:nth-child(4) .best-swiper-img {background: url(/img/pond.png) no-repeat center; background-size: cover;}
 .best-section .swiper-slide:nth-child(5) .best-swiper-img {background: url(/img/spring.png) no-repeat center; background-size: cover;}
+.best-section .swiper-slide .best-swiper-img .white-box {visibility: hidden; width: 0; }
+.best-section .swiper-slide .best-swiper-img:hover .white-box { display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; width: 85%; height: 85%; margin: auto; transition: all 1s cubic-bezier(.48,.57,.42,.92); background: rgba(255, 255, 255, 0.8);  visibility: visible;}
+.best-section .swiper-slide .best-swiper-img .white-box button {display: inline-block; width: 16rem; height: 4.5rem; font-size: 1.5rem; color: #333; background: rgba(255, 255, 255, 0); line-height: 4.5rem; font-weight: var(--fw-500); border: 1px solid var(--color-orange); font-family: 'EB Garamond';}
+.best-section .swiper-slide .best-swiper-img .white-box .white-box-img {display: flex; justify-content: space-between; width: 30%; position: absolute; bottom: 3rem;}
+
 
 .best-section .best-swiper-txts {display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 2rem; width: 100%; margin-top: 3rem;}
 .best-section .best-swiper-txts .bst-txt a {display: inline-block; font-size: 2.4rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-600); line-height: 3rem;}
@@ -83,5 +88,10 @@
 .best-section .best-swiper-txts .bst-price {display: flex; align-items: baseline; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-500);}
 .best-section .best-swiper-txts .bst-price strong {font-size: 3.6rem;  }
 .best-section .best-swiper-txts .bst-price p {font-size: 2rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-500);}
+
+.best-section .swiper-pagination-bullet {background: #333;}
+.best-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
+.best-section .swiper-button-next{right: 15rem;}
+.best-section .swiper-button-prev{left: 15rem;}
 
  

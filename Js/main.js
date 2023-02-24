@@ -96,6 +96,7 @@ var swiper = new Swiper(".best-section .mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
