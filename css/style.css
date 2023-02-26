@@ -32,7 +32,7 @@
 .side-nav-menu .nav-menu-wrap .side-acc-item a {display: inline-block; flex-direction: column; font-size: 1.6rem; color: var(--color-gray-3); line-height: 2.4rem;}
 
 /********** slider section style **********/
-.swiper-section{position: relative; width: 100%; max-width: 160rem; margin: 0 auto; padding: 0;}
+.swiper-section{position: relative; width: 100%; max-width: 190rem; margin: 0 auto; padding: 0;}
 .swiper-section .swiper {width: 100%; height: auto;}
 .swiper-section .swiper-slide-active .swiper-img {transform: scale3d(1.1,1.1,1); transition: all 4s ease;}
 .swiper-section .swiper-slide:nth-child(1) .swiper-img{width: 100%; height: 79rem; resize: both; background: url(/img/maindata128056_0.jpg) no-repeat; background-size: cover; overflow: hidden; }
@@ -94,16 +94,16 @@
 .best-section .swiper-button-prev{left: 15rem;}
 
  /********** MD section style **********/
- .MD-section {width: 100%; height: 74rem; padding: 10rem 0 21rem; background: url(/img/pick-bg.jpg) no-repeat center; background-size: cover;}
- .MD-section .txt .pick-txt {display: flex;align-items: center; gap: 3rem; margin: 5rem 0 7.5rem; }
- .MD-section .txt .pick-txt span a {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: #666666; line-height: 2.5rem; }
- .MD-section .txt .pick-txt span:checked a {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: #333; line-height: 2.5rem; }
- .MD-section .MD-boxes .MD-box {display: ;}
- .MD-section .MD-boxes .MD-box.active {position: relative; display: flex; width: 134rem; height: 50rem; margin: 0 auto; background: #fff; box-shadow: 1px 3px 13px rgba(0, 0, 0, 13%);}
- .MD-section .MD-boxes .MD-box:nth-child(1) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/house.png) no-repeat center; background-size: cover;}
- .MD-section .MD-boxes .MD-box:nth-child(2) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/pond.png) no-repeat center; background-size: cover;}
- .MD-section .MD-boxes .MD-box .MD-txts {width: 50%; padding: 10rem 8rem 3rem 70rem;}
- .MD-section .MD-boxes .MD-box .MD-txts span {margin-top: 3rem; margin-bottom: .8rem; font-size: 1.6rem; color: var(--color-orange); font-family: 'Noto Serif KR'; line-height: 2.6rem;}
- .MD-section .MD-boxes .MD-box .MD-txts h2 {margin-bottom: 3rem; font-size: 3.6rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-700); line-height: 4.6rem;}
- .MD-section .MD-boxes .MD-box .MD-txts h3 {font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
- .MD-section .MD-boxes .MD-box .MD-txts button {margin-top: 5.5rem;}
+ .MD-section {width: 100%; max-width: 190rem; height: 74rem; padding: 10rem 0 21rem; margin: 0 auto; background: url(/img/pick-bg.jpg) no-repeat center; background-size: cover;}
+ .MD-tab-menu .MD-tab {display: flex;align-items: center; justify-content: center; gap: 3rem; margin: 5rem 0 7.5rem;}
+ .MD-tab-menu .MD-tab .tab-item {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: #a4a4a4; line-height: 2.5rem;}
+ .MD-tab-menu .MD-tab .tab-item.active {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: black; line-height: 2.5rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner{display: none;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner.active {position: relative; display: flex; width: 134rem; height: 50rem; margin: 0 auto; background: #fff; box-shadow: 1px 3px 13px rgba(0, 0, 0, 13%);}
+ .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(1) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/house.png) no-repeat center; background-size: cover;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(2) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/pond.png) no-repeat center; background-size: cover;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts {width: 50%; padding: 10rem 8rem 3rem 70rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts span {margin-top: 3rem; margin-bottom: .8rem; font-size: 1.6rem; color: var(--color-orange); font-family: 'Noto Serif KR'; line-height: 2.6rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts h2 {margin-bottom: 3rem; font-size: 3.6rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-700); line-height: 4.6rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts h3 {font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts button {margin-top: 5.5rem;}

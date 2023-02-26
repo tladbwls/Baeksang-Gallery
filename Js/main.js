@@ -105,5 +105,20 @@ var swiper = new Swiper(".best-section .mySwiper", {
 });
 
 //MD pick click
-const mdTap = document.querySelectorAll(".MD-section .txt .pick-txt span a");
-const mdPanel = document.querySelectorAll(".MD-section .MD-boxes .MD-box");
+const tabItem = document.querySelectorAll(".MD-tab-menu .MD-tab .tab-item");
+const tabInner = document.querySelectorAll(
+  ".MD-tab-menu .tab-inner-wrap .tab-inner"
+);
+
+tabItem.forEach((tab, idx) => {
+  tab.addEventListener("click", function () {
+    tabInner.forEach((inner) => {
+      inner.classList.remove("active");
+    });
+    tabItem.forEach((item) => {
+      item.classList.remove("active");
+    });
+    tabItem[idx].classList.add("active");
+    tabInner[idx].classList.add("active");
+  });
+});

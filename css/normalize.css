@@ -110,7 +110,7 @@ li::marker{list-style: none;}
 
 /* Common css */
 .wrapper {width: var(--ls-full); height: auto; overflow: hidden;}
-.container {width: var(--ls-full); height: auto; max-width: 1600px; margin: auto; padding: 0 var(--el-wide);}
+.container {width: var(--ls-full); height: auto; max-width: 190rem; margin: auto; padding: 0 var(--el-wide);}
 .section {width: var(--ls-full); height: auto; padding: var(--el-section) 0; }
 
 .section-wrapper {padding: 0 5rem;}
