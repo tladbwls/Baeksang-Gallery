@@ -123,6 +123,8 @@ li::marker{list-style: none;}
 .main-txts h2::before {content: ""; position: absolute; top: 50%; left: 100%; display: block; width: 17rem; height: .1rem; background: #211e1f;}
 .main-txts h2::after {content: ""; position: absolute; top: 50%; right: 100%; display: block; width: 17rem; height: .1rem; background: #211e1f;}
 
+button {display: inline-block; width: 16rem; height: 4.5rem; font-size: 1.5rem; color: #333; background: rgba(255, 255, 255, 0); line-height: 4.5rem; font-weight: var(--fw-500); border: 1px solid var(--color-orange); font-family: 'EB Garamond';}
+
 
 
 

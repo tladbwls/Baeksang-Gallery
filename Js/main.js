@@ -103,3 +103,7 @@ var swiper = new Swiper(".best-section .mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//MD pick click
+const mdTap = document.querySelectorAll(".MD-section .txt .pick-txt span a");
+const mdPanel = document.querySelectorAll(".MD-section .MD-boxes .MD-box");
