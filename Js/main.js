@@ -104,7 +104,7 @@ var swiper = new Swiper(".best-section .mySwiper", {
   },
 });
 
-//MD pick click
+//MD pick tab
 const tabItem = document.querySelectorAll(".MD-tab-menu .MD-tab .tab-item");
 const tabInner = document.querySelectorAll(
   ".MD-tab-menu .tab-inner-wrap .tab-inner"
@@ -121,4 +121,14 @@ tabItem.forEach((tab, idx) => {
     tabItem[idx].classList.add("active");
     tabInner[idx].classList.add("active");
   });
+});
+
+// New swiper slider
+var swiper = new Swiper(".new-section .mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

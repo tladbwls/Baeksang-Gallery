@@ -89,9 +89,7 @@
 .best-section .best-swiper-txts .bst-price p {font-size: 2rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-500);}
 
 .best-section .swiper-pagination-bullet {background: #333;}
-.best-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
-.best-section .swiper-button-next{right: 15rem;}
-.best-section .swiper-button-prev{left: 15rem;}
+
 
  /********** MD section style **********/
  .MD-section {width: 100%; max-width: 190rem; height: 74rem; padding: 10rem 0 21rem; margin: 0 auto; background: url(/img/pick-bg.jpg) no-repeat center; background-size: cover;}
@@ -107,3 +105,23 @@
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts h2 {margin-bottom: 3rem; font-size: 3.6rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-700); line-height: 4.6rem;}
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts h3 {font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts button {margin-top: 5.5rem;}
+
+ /********** New section style **********/
+.new-section {width: 100%; height: auto; padding: 9.5rem 0 7.5rem;}
+.new-section .main-txts {margin-bottom: 10rem;}
+.new-section .swiper .swiper-wrapper {margin: 0 auto;}
+.new-section .swiper-slide {width: 44rem;}
+.new-section .swiper-slide .new-swiper-img {display: flex; align-items: flex-end; width: 100%; height: 50rem; }
+.new-section .swiper-slide .new-swiper-img .white-box {width: 38rem; height: 8rem; background: #fff;}
+.new-section .swiper-slide .new-swiper-img .white-box span {display: block; padding: 2rem 0 1rem; font-size: 1.6rem; color: var(--color-orange); line-height: 2.6rem; font-family: 'Noto Serif KR';}
+.new-section .swiper-slide .new-swiper-img .white-box h2 {font-size: 2.4rem; color: var(--color-gray-3); line-height: 3.4rem; font-family: 'Noto Serif KR'; font-weight: var(--fw-600);}
+.new-section .swiper-slide:nth-child(1) .new-swiper-img {background: url(/img/terrace.jpg) no-repeat center; background-size: cover;}
+.new-section .swiper-slide:nth-child(2) .new-swiper-img {background: url(/img/night.jpg) no-repeat center; background-size: cover;}
+.new-section .swiper-slide:nth-child(3) .new-swiper-img {background: url(/img/kamiyou.jpg) no-repeat center; background-size: cover;}
+.new-section .swiper-slide:nth-child(4) .new-swiper-img {background: url(/img/spring.png) no-repeat center; background-size: cover;}
+.new-section .swiper-slide:nth-child(5) .new-swiper-img {background: url(/img/portrait.png) no-repeat center; background-size: cover;}
+
+.new-section .swiper-slide .new-swiper-txt {margin-top: 3.5rem;}
+.new-section .swiper-slide .new-swiper-txt h3 {margin-bottom: 5rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
+.new-section .swiper-slide .new-swiper-txt a {margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
+.new-section .swiper-slide .new-swiper-txt a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
