@@ -125,7 +125,7 @@
 .new-section .swiper-slide:nth-child(5) .new-swiper-img {background: url(/img/portrait.png) no-repeat center; background-size: cover;}
 
 .new-section .swiper-slide .new-swiper-txt {margin-top: 3.5rem;}
-.new-section .swiper-slide .new-swiper-txt h3 {margin-bottom: 5rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
+.new-section .swiper-slide .new-swiper-txt h3 {height: 7.8rem; margin-bottom: 5rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
 .new-section .swiper-slide .new-swiper-txt a {display: flex; align-items: center; justify-content: space-between; width: 30%; margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
 .new-section .swiper-slide .new-swiper-txt a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
 .new-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
@@ -151,10 +151,9 @@
 .review-section .review-box .review-wrapper:nth-child(3) .review-img {background: url(/img/amond-tree.jpg) no-repeat center; background-size: cover;}
 .review-section .review-box .review-wrapper .review-img span {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 5.3rem; height: 5.3rem; background: #fff; font-size: 1.3rem; color: var(--color-orange);}
 .review-section .review-box .review-wrapper .review-img span strong {font-size: 2.4rem; color: var(--color-orange); line-height: 2,4rem; }
-.review-section .review-box .review-wrapper .review-txts {}
 .review-section .review-box .review-wrapper .review-txts .name {display: flex; margin-top: 3rem;}
 .review-section .review-box .review-wrapper .review-txts .name span {font-size: 1.5rem; color: var(--color-orange); line-height: 1.8rem;}
-.review-section .review-box .review-wrapper .review-txts>span {display: inline-block; height: 5.2rem; margin-top: 1rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem; text-overflow: ellipsis; overflow: hidden;}
+.review-section .review-box .review-wrapper .review-txts>span {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 5.2rem; margin-top: 1rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem; text-overflow: ellipsis; overflow: hidden;}
 .review-section .review-box .review-wrapper .review-txts>a {display: flex; align-items: center; justify-content: space-between; width: 30%; margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
 .review-section .review-box .review-wrapper .review-txts>a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
 
