@@ -88,6 +88,9 @@
 .best-section .best-swiper-txts .bst-price strong {font-size: 3.6rem;  }
 .best-section .best-swiper-txts .bst-price p {font-size: 2rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-500);}
 
+.best-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
+.best-section .swiper-button-next{right: 15rem;}
+.swiper-button-prev{left: 15rem;}
 .best-section .swiper-pagination-bullet {background: #333;}
 
 
@@ -107,11 +110,11 @@
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts button {margin-top: 5.5rem;}
 
  /********** New section style **********/
-.new-section {width: 100%; height: auto; padding: 9.5rem 0 7.5rem;}
+.new-section {position: relative; margin: 9rem 25rem;}
 .new-section .main-txts {margin-bottom: 10rem;}
 .new-section .swiper .swiper-wrapper {margin: 0 auto;}
 .new-section .swiper-slide {width: 44rem;}
-.new-section .swiper-slide .new-swiper-img {display: flex; align-items: flex-end; width: 100%; height: 50rem; }
+.new-section .swiper-slide .new-swiper-img {display: flex; align-items: flex-end; width: 100%; height: 62rem; }
 .new-section .swiper-slide .new-swiper-img .white-box {width: 38rem; height: 8rem; background: #fff;}
 .new-section .swiper-slide .new-swiper-img .white-box span {display: block; padding: 2rem 0 1rem; font-size: 1.6rem; color: var(--color-orange); line-height: 2.6rem; font-family: 'Noto Serif KR';}
 .new-section .swiper-slide .new-swiper-img .white-box h2 {font-size: 2.4rem; color: var(--color-gray-3); line-height: 3.4rem; font-family: 'Noto Serif KR'; font-weight: var(--fw-600);}
@@ -123,5 +126,35 @@
 
 .new-section .swiper-slide .new-swiper-txt {margin-top: 3.5rem;}
 .new-section .swiper-slide .new-swiper-txt h3 {margin-bottom: 5rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem;}
-.new-section .swiper-slide .new-swiper-txt a {margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
+.new-section .swiper-slide .new-swiper-txt a {display: flex; align-items: center; justify-content: space-between; width: 30%; margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
 .new-section .swiper-slide .new-swiper-txt a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
+.new-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
+.new-section .swiper-button-next{right: -10rem;}
+.swiper-button-prev{left: -10rem}
+
+ /********** Gallery section style **********/
+ .gallery-section {padding: 15rem 0; background: url(/img/gallery-bg.jpg) no-repeat center; background-size: cover; background-attachment: fixed;}
+ .gallery-section .gallery-box {width: 130rem; height: 20rem; padding: 8rem 2rem; margin: 0 auto; background: rgba(255, 255, 255, .8);}
+ .gallery-section .gallery-box .gallery-txts {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+ .gallery-section .gallery-box .gallery-txts h2 {font-size: 4rem; color: #211e1f; line-height: 5rem; font-weight: var(--fw-600); letter-spacing: .4rem; font-family: 'EB Garamond';}
+ .gallery-section .gallery-box .gallery-txts span {margin-top: 3rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-weight: var(--fw-500); font-family: 'Noto Serif KR';}
+ .gallery-section .gallery-box .gallery-txts button {margin-top: 5rem;}
+
+ /********** Review section style **********/
+.review-section {margin: 15rem 25rem;}
+.review-section .review-box {display: flex; gap: 3rem; margin-top: 9rem;}
+.review-section .review-box .review-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.review-section .review-box .review-wrapper {width: var( --ls-1-3); height: auto;}
+.review-section .review-box .review-wrapper .review-img {display: flex; justify-content: flex-end; width: 100%; height: 37rem;}
+.review-section .review-box .review-wrapper:nth-child(1) .review-img {background: url(/img/thum05.png) no-repeat center; background-size: cover;}
+.review-section .review-box .review-wrapper:nth-child(2) .review-img {background: url(/img/kiss.jpg) no-repeat center; background-size: cover;}
+.review-section .review-box .review-wrapper:nth-child(3) .review-img {background: url(/img/amond-tree.jpg) no-repeat center; background-size: cover;}
+.review-section .review-box .review-wrapper .review-img span {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 5.3rem; height: 5.3rem; background: #fff; font-size: 1.3rem; color: var(--color-orange);}
+.review-section .review-box .review-wrapper .review-img span strong {font-size: 2.4rem; color: var(--color-orange); line-height: 2,4rem; }
+.review-section .review-box .review-wrapper .review-txts {}
+.review-section .review-box .review-wrapper .review-txts .name {display: flex; margin-top: 3rem;}
+.review-section .review-box .review-wrapper .review-txts .name span {font-size: 1.5rem; color: var(--color-orange); line-height: 1.8rem;}
+.review-section .review-box .review-wrapper .review-txts>span {display: inline-block; height: 5.2rem; margin-top: 1rem; font-size: 1.6rem; color: #666666; line-height: 2.6rem; text-overflow: ellipsis; overflow: hidden;}
+.review-section .review-box .review-wrapper .review-txts>a {display: flex; align-items: center; justify-content: space-between; width: 30%; margin-top: 2.5rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-family: 'EB Garamond';}
+.review-section .review-box .review-wrapper .review-txts>a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
+
