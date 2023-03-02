@@ -58,6 +58,7 @@ var swiper = new Swiper(".swiper-section .mySwiper", {
     el: ".swiper-section .swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
+      console.log(className);
       return (
         '<div class="' +
         className +
@@ -84,8 +85,8 @@ var swiper = new Swiper(".swiper-section .mySwiper", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-section .swiper-button-next",
+    prevEl: ".swiper-section .swiper-button-prev",
   },
 });
 
@@ -94,13 +95,23 @@ var swiper = new Swiper(".best-section .mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".best-section .swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".best-section .swiper-button-next",
+    prevEl: ".best-section .swiper-button-prev",
+  },
+  breakpoints: {
+    760: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 30,
+    },
+    1441: {
+      slidesPerView: 4,
+      spaceBetweenSlides: 30,
+    },
   },
 });
 
@@ -128,7 +139,7 @@ var swiper = new Swiper(".new-section .mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".new-section .swiper-button-next",
+    prevEl: ".new-section .swiper-button-prev",
   },
 });
