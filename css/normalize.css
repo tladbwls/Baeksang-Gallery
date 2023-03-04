@@ -120,8 +120,8 @@ li::marker{list-style: none;}
 .main-txts .txt {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .main-txts span {display: block; margin-bottom:1.2rem; font-size: 2rem; color: #c9ab81; line-height: 3rem; font-family: 'Noto Serif KR';}
 .main-txts h2 {display: block; position: relative; padding: 0 8rem; font-size: 5rem; color: #211e1f; font-weight: var(--fw-500); letter-spacing: .5rem; font-family: 'EB Garamond';}
-.main-txts h2::before {content: ""; position: absolute; top: 50%; left: 100%; display: block; width: 17rem; height: .1rem; background: #211e1f;}
-.main-txts h2::after {content: ""; position: absolute; top: 50%; right: 100%; display: block; width: 17rem; height: .1rem; background: #211e1f;}
+.main-txts h2::before {content: ""; position: absolute; top: 50%; left: 100%; display: block; width: 30%; height: .1rem; background: #211e1f;}
+.main-txts h2::after {content: ""; position: absolute; top: 50%; right: 100%; display: block; width: 30%; height: .1rem; background: #211e1f;}
 
 button {display: inline-block; width: 16rem; height: 4.5rem; font-size: 1.5rem; color: #333; background: rgba(255, 255, 255, 0); line-height: 4.5rem; font-weight: var(--fw-500); border: 1px solid var(--color-orange); font-family: 'EB Garamond';}
 

@@ -104,13 +104,14 @@ var swiper = new Swiper(".best-section .mySwiper", {
     prevEl: ".best-section .swiper-button-prev",
   },
   breakpoints: {
+    // 0: { slidesPerView: 1, spaceBetweenSlides: 20 },
     760: {
       slidesPerView: 3,
-      spaceBetweenSlides: 30,
+      spaceBetweenSlides: 20,
     },
     1441: {
       slidesPerView: 4,
-      spaceBetweenSlides: 30,
+      spaceBetweenSlides: 20,
     },
   },
 });
@@ -141,5 +142,8 @@ var swiper = new Swiper(".new-section .mySwiper", {
   navigation: {
     nextEl: ".new-section .swiper-button-next",
     prevEl: ".new-section .swiper-button-prev",
+  },
+  breakpoints: {
+    0: { slidesPerView: 1, spaceBetweenSlides: 20 },
   },
 });

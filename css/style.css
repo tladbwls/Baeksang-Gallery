@@ -6,7 +6,7 @@
 .header .nav-left> ul {display: flex; align-items: center; justify-content: space-evenly; width: 100%; height: auto;}
 .header .nav-left> ul> li a { color: #333; font-size: 1.6rem; line-height: 2rem;}
 .header .logo {width: 20%; height: auto; margin-left: 4rem;}
-.header .logo a {display: inline-block; width: 14.6rem; height: 4.5rem; background: url(../img/logo.png) no-repeat center; font-size: 0;}
+.header .logo a {display: inline-block; width: 14.6rem; height: 4.5rem; background: url(../img/logo.png) no-repeat center; background-size: cover; font-size: 0;}
 .header .nav-right{width: 35%; height: auto;}
 .header .nav-right> ul {display: flex; align-items: center; justify-content: space-evenly;width: 100%; height: auto;}
 .header .nav-right> ul> li a {font-size: 1.6rem; font-weight: 500; line-height: 2rem;}
@@ -41,7 +41,7 @@
 .swiper-section .swiper-slide:nth-child(2) .swiper-img {background: url(/img/maindata131255_0.jpg) no-repeat; background-size: cover; overflow: hidden; }
 .swiper-section .swiper-slide:nth-child(3) .swiper-img{background: url(/img/maindata131279_0.jpg) no-repeat; background-size: cover; overflow: hidden; }
 
-.swiper-section .swiper-pagination {position: absolute; width: 50%; height: 14rem; bottom: 0; right: 0; display: flex; padding: 2rem 5rem 0 5rem; margin: 0 100rem; text-align: start; background: #fff; z-index: 10;}
+.swiper-section .swiper-pagination {position: absolute; width: 50%; height: 14rem; transform: translateX(100%); bottom: 0; _right: 0; display: flex; padding: 2rem 5rem 0 5rem; _margin: 0 100rem; text-align: start; background: #fff; z-index: 10;}
 .swiper-section .swiper-pagination .swiper-pagination-bullet {width: 22.9rem; height: 7.7rem; display: flex; flex-direction: column; background: #fff;}
 .swiper-section .swiper-pagination .swiper-pagination-bullet span {margin-bottom: 1.3rem; font-size: 1.5rem; font-weight: var(--fw-700); font-family: 'EB Garamond'; color: var(--color-orange);}
 .swiper-section .swiper-pagination .swiper-pagination-bullet strong {font-size: 1.6rem; font-weight: var(--fw-700); font-family: 'EB Garamond'; line-height: 2.2rem; color: #333;}
@@ -93,18 +93,20 @@
 .best-section .swiper-button {position: absolute; top: 60%; width: 3.6rem; height: 1.7rem; color: #666;}
 .best-section .swiper-button-next{right: 15rem;}
 .best-section .swiper-button-prev{left: 15rem;}
+.best-section .swiper-pagination {top: 90%;}
 .best-section .swiper-pagination-bullet {background: #333;}
 
 
  /********** MD section style **********/
- .MD-section {width: 100%; max-width: 190rem; height: 74rem; padding: 10rem 0 21rem; margin: 0 auto; background: url(/img/pick-bg.jpg) no-repeat center; background-size: cover;}
+ .MD-section {width: 100%; max-width: 190rem; height: auto; padding: 10rem 0 21rem; margin: 0 auto; background: url(/img/pick-bg.jpg) no-repeat center; background-size: cover;}
  .MD-tab-menu .MD-tab {display: flex;align-items: center; justify-content: center; gap: 3rem; margin: 5rem 0 7.5rem;}
  .MD-tab-menu .MD-tab .tab-item {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: #a4a4a4; line-height: 2.5rem;}
  .MD-tab-menu .MD-tab .tab-item.active {display: block; font-size: 1.8rem; font-weight: var(--fw-500); color: black; line-height: 2.5rem;}
  .MD-tab-menu .tab-inner-wrap .tab-inner{display: none;}
  .MD-tab-menu .tab-inner-wrap .tab-inner.active {position: relative; display: flex; width: 134rem; height: 50rem; margin: 0 auto; background: #fff; box-shadow: 1px 3px 13px rgba(0, 0, 0, 13%);}
- .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(1) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/house.png) no-repeat center; background-size: cover;}
- .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(2) .MD-img {position: absolute; top: 6rem; left: -6rem; width: 64rem; height: 50rem; background: url(/img/pond.png) no-repeat center; background-size: cover;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner .MD-img {position: absolute; top: 6rem; _left: -6rem; transform: translateX(-5%); width: 64rem; height: 50rem;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(1) .MD-img { background: url(/img/house.png) no-repeat center; background-size: cover;}
+ .MD-tab-menu .tab-inner-wrap .tab-inner:nth-child(2) .MD-img {background: url(/img/pond.png) no-repeat center; background-size: cover;}
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts {width: 50%; padding: 10rem 8rem 3rem 70rem;}
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts span {margin-top: 3rem; margin-bottom: .8rem; font-size: 1.6rem; color: var(--color-orange); font-family: 'Noto Serif KR'; line-height: 2.6rem;}
  .MD-tab-menu .tab-inner-wrap .tab-inner .MD-txts h2 {margin-bottom: 3rem; font-size: 3.6rem; color: var(--color-gray-3); font-family: 'Noto Serif KR'; font-weight: var(--fw-700); line-height: 4.6rem;}
@@ -117,7 +119,7 @@
 .new-section .swiper .swiper-wrapper {margin: 0 auto;}
 .new-section .swiper-slide {width: 44rem;}
 .new-section .swiper-slide .new-swiper-img {display: flex; align-items: flex-end; width: 100%; height: 62rem; }
-.new-section .swiper-slide .new-swiper-img .white-box {width: 38rem; height: 8rem; background: #fff;}
+.new-section .swiper-slide .new-swiper-img .white-box {width: 85%; height: 8rem; background: #fff;}
 .new-section .swiper-slide .new-swiper-img .white-box span {display: block; padding: 2rem 0 1rem; font-size: 1.6rem; color: var(--color-orange); line-height: 2.6rem; font-family: 'Noto Serif KR';}
 .new-section .swiper-slide .new-swiper-img .white-box h2 {font-size: 2.4rem; color: var(--color-gray-3); line-height: 3.4rem; font-family: 'Noto Serif KR'; font-weight: var(--fw-600);}
 .new-section .swiper-slide:nth-child(1) .new-swiper-img {background: url(/img/terrace.jpg) no-repeat center; background-size: cover;}
@@ -136,7 +138,7 @@
 
  /********** Gallery section style **********/
  .gallery-section {padding: 15rem 0; background: url(/img/gallery-bg.jpg) no-repeat center; background-size: cover; background-attachment: fixed;}
- .gallery-section .gallery-box {width: 130rem; height: 20rem; padding: 8rem 2rem; margin: 0 auto; background: rgba(255, 255, 255, .8);}
+ .gallery-section .gallery-box {width: 100%; height: 20rem; padding: 8rem 2rem; margin: 0 auto; background: rgba(255, 255, 255, .8);}
  .gallery-section .gallery-box .gallery-txts {display: flex; flex-direction: column; justify-content: center; align-items: center;}
  .gallery-section .gallery-box .gallery-txts h2 {font-size: 4rem; color: #211e1f; line-height: 5rem; font-weight: var(--fw-600); letter-spacing: .4rem; font-family: 'EB Garamond';}
  .gallery-section .gallery-box .gallery-txts span {margin-top: 3rem; font-size: 1.8rem; color: var(--color-gray-3); line-height: 2.8rem; font-weight: var(--fw-500); font-family: 'Noto Serif KR';}
@@ -160,10 +162,13 @@
 .review-section .review-box .review-wrapper .review-txts>a::before {content: ""; display: inline-block; width: 3.5rem; height: .1rem; background: var(--color-orange);} 
 
  /********** Footer style **********/
- .footer {width: 100%; height: auto; padding: 6rem 0; background: #272727;}
+ .footer {width: 100%; height: auto; padding: 6rem 2rem; background: #272727;}
  .footer .footer-info-wrapper {max-width: 140rem; margin: 0 auto;}
  .footer .footer-info-wrapper .policy {display: flex; gap: 3rem;}
 .footer .footer-address span, .footer .footer-address p, .footer .policy a {font-size: 1.6rem; line-height: 2.6rem; font-weight: var(--fw-500); font-style: normal; color: #888; }
 .footer .footer-info-wrapper .footer-address {margin-top: 2rem;}
 .footer .footer-info-wrapper .footer-address>p {display: flex; gap: 3rem; margin-top: 1rem;}
 
+/* go-top */
+.go-top {position: fixed; bottom: 0; right: 0; width: 5rem; height: 5rem; background: var(--color-orange);}
+.go-top a i {display: inline-block; width: 3rem; height: 3.5rem; color: #fff;}
