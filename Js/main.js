@@ -50,6 +50,9 @@ function toggleClose() {
     all[i].className = "nav-menu-close";
   }
 }
+
+// Header menu
+
 // first swiper slider
 var menu = ["BAEXANG GALLARY SHOP <br> GRAND OPEN", "GRAND OPEN", "BAEXANG"];
 var menu1 = ["01", "02", "03"];
@@ -104,15 +107,16 @@ var swiper = new Swiper(".best-section .mySwiper", {
     prevEl: ".best-section .swiper-button-prev",
   },
   breakpoints: {
-    // 0: { slidesPerView: 1, spaceBetweenSlides: 20 },
-    760: {
-      slidesPerView: 3,
-      spaceBetweenSlides: 20,
-    },
     1441: {
       slidesPerView: 4,
       spaceBetweenSlides: 20,
     },
+    760: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 20,
+    },
+
+    0: { slidesPerView: 1, spaceBetweenSlides: 20 },
   },
 });
 
@@ -144,6 +148,35 @@ var swiper = new Swiper(".new-section .mySwiper", {
     prevEl: ".new-section .swiper-button-prev",
   },
   breakpoints: {
+    1441: {
+      slidesPerView: 3,
+      spaceBetweenSlides: 20,
+    },
+    760: {
+      slidesPerView: 2,
+      spaceBetweenSlides: 20,
+    },
+    480: { slidesPerView: 1, spaceBetweenSlides: 20 },
     0: { slidesPerView: 1, spaceBetweenSlides: 20 },
   },
+});
+
+// go-top, header scroll
+const goTop = document.querySelector(".go-top");
+const header = document.querySelector(".header");
+goTop.addEventListener("click", function () {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+window.addEventListener("scroll", function () {
+  if (scrollY <= 800) {
+    goTop.classList.add("active");
+    header.classList.remove("active");
+  } else {
+    goTop.classList.remove("active");
+    header.classList.add("active");
+  }
 });
